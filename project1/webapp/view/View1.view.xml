@@ -1,7 +1,28 @@
 <mvc:View controllerName="project1.controller.View1"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m">
-    <Page id="page" title="My First View">
-        <content />
+    <Page id="page1" title="My First View">
+        <content>
+        <Text id="_IDGenText" text="Welcome to SAP UI5" class="sapMH3FontSize" textAlign="Center" width="100%"> </Text>
+        <Label id="lbl1" text="Enter your name " class="sapUiSmallMargin" required="true" design="Bold"></Label>
+        <Input id="inp1" width="20%" placeholder="Enter Name" maxLength="10"></Input>
+        <Label id="lbl2" text="Enter Alignment " class="sapUiSmallMargin" required="true" design="Bold"></Label>
+        <Input id="inp2" width="20%" placeholder="Enter Alignment" maxLength="10"></Input>
+        </content>
+        <footer>
+            <Bar id="bar1">
+                <!-- <contentLeft><Button id="_IDGenButton" text="Go to Second View" press="onPress"></Button>
+                </contentLeft>
+                <contentRight><Button id="_IDGenButton" text="Go to Second View" press="onPress"></Button>
+                </contentRight> -->
+                <contentRight><Button id="_IDGenButton1" text="Go to Second View" press="onPress" type="Emphasized"></Button>
+                </contentRight>
+                <contentRight><Button id="_IDGenButton2" width="10%" text="Submit" press="onSubmit" type="Emphasized"></Button>
+                </contentRight>
+                <contentRight><Button id="_IDGenButton3" text="Hide" press="onHideShow" type="Emphasized"></Button>
+                </contentRight>
+                
+            </Bar>
+        </footer>
     </Page>
 </mvc:View>
