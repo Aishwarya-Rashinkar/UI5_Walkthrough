@@ -13,9 +13,102 @@
         class="mybackgroundcolor"
     >
         <content>
+            <!-- OBJECT HEADER AND INCON TABBER -->
 
-        <!-- SIMPLE FORM  -->
-        <f:SimpleForm id="_IDGenSimpleForm" title="Employee Information" editable="true" layout="ResponsiveGridLayout" labelSpanL="3" labelSpanM="3" emptySpanL="0" emptySpanM="0">
+            <ObjectHeader
+                id="_IDGenObjectHeader"
+                title="Washing Machine"
+                number="30000"
+                numberUnit="INR"
+                backgroundDesign="Solid"
+            >
+                <attributes>
+                    <ObjectAttribute
+                        id="_IDGenObjectAttribute"
+                        title="Material ID"
+                        text="MAT003"
+                    />
+                    <ObjectAttribute
+                        id="_IDGenObjectAttribute1"
+                        title="Material Description"
+                        text="Fully Automatic"
+                    />
+                </attributes>
+                <statuses>
+                    <ObjectStatus
+                        id="_IDGenObjectStatus1"
+                        text="Approved"
+                    />
+                </statuses>
+            </ObjectHeader>
+
+            <IconTabBar id="_IDGenIconTabBar">
+                <items>
+                    <IconTabFilter
+                        id="_IDGenIconTabFilter1"
+                        icon="sap-icon://hint"
+                    >
+                        <f:SimpleForm
+                            id="_IDGenSimpleForm"
+                            title="Employee Information"
+                            editable="true"
+                            layout="ResponsiveGridLayout"
+                            labelSpanL="3"
+                            labelSpanM="3"
+                            emptySpanL="0"
+                            emptySpanM="0"
+                        >
+                            <f:content>
+                                <core:Title
+                                    id="_IDGenTitle1"
+                                    text="Basic Information"
+                                />
+                                <Label
+                                    id="_IDGenLabel11"
+                                    text="Employee ID"
+                                />
+                                <Input id="_IDGenInput11" />
+                                <Label
+                                    id="_IDGenLabel22"
+                                    text="Employee Name"
+                                />
+                                <Input id="_IDGenInput22" />
+                                <Label
+                                    id="_IDGenLabel33"
+                                    text="Employee DEsignation"
+                                />
+                                <Input id="_IDGenInput33" />
+                                <Label
+                                    id="_IDGenLabel44"
+                                    text="Employee Skill"
+                                />
+                                <Input id="_IDGenInput44" />
+                                <core:Title
+                                    id="_IDGenTitle2"
+                                    text="Contract Information"
+                                />
+                                <Label
+                                    id="_IDGenLabel55"
+                                    text="Employee Email"
+                                />
+                                <Input id="_IDGenInput55" />
+                                <Label
+                                    id="_IDGenLabel66"
+                                    text="Employee Phone"
+                                />
+                                <Input id="_IDGenInput66" />
+                            </f:content>
+                        </f:SimpleForm>
+                    </IconTabFilter>
+                    <IconTabFilter
+                        id="_IDGenIconTabFilter2"
+                        icon="sap-icon://notes"
+                    >
+                    </IconTabFilter>
+                </items>
+            </IconTabBar>
+            <!-- SIMPLE FORM  -->
+            <!-- <f:SimpleForm id="_IDGenSimpleForm" title="Employee Information" editable="true" layout="ResponsiveGridLayout" labelSpanL="3" labelSpanM="3" emptySpanL="0" emptySpanM="0">
         <f:content>
             <core:Title id="_IDGenTitle1" text="Basic Information"></core:Title>
             <Label id="_IDGenLabel" text="Employee ID"></Label>
@@ -32,9 +125,9 @@
             <Label id="_IDGenLabel7" text="Employee Phone"></Label>
             <Input id="_IDGenInput8" ></Input>
         </f:content>
-        </f:SimpleForm>
-        <!-- GRID LAYOUT -->
-        <!-- <Panel id="panel1" headerText="Employee Detail" >
+        </f:SimpleForm> -->
+            <!-- GRID LAYOUT -->
+            <!-- <Panel id="panel1" headerText="Employee Detail" >
             <l:Grid id="_IDGenGrid" width="100%">
                 <l:content>
                     <Label
@@ -160,7 +253,6 @@
                 </l:content>
             </l:Grid>
         </Panel> -->
-            
         </content>
         <footer>
             <Bar id="_IDGenBar">
