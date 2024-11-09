@@ -5,6 +5,7 @@
     xmlns="sap.m"
     xmlns:l="sap.ui.layout"
     xmlns:f="sap.ui.layout.form"
+    xmlns:core="sap.ui.core"
 >
     <Page
         id="page2"
@@ -12,7 +13,28 @@
         class="mybackgroundcolor"
     >
         <content>
-        <Panel id="panel1" headerText="Employee Detail" >
+
+        <!-- SIMPLE FORM  -->
+        <f:SimpleForm id="_IDGenSimpleForm" title="Employee Information" editable="true" layout="ResponsiveGridLayout" labelSpanL="3" labelSpanM="3" emptySpanL="0" emptySpanM="0">
+        <f:content>
+            <core:Title id="_IDGenTitle1" text="Basic Information"></core:Title>
+            <Label id="_IDGenLabel" text="Employee ID"></Label>
+            <Input id="_IDGenInput3" ></Input>
+            <Label id="_IDGenLabel3" text="Employee Name"></Label>
+            <Input id="_IDGenInput4" ></Input>
+            <Label id="_IDGenLabel4" text="Employee DEsignation"></Label>
+            <Input id="_IDGenInput5" ></Input>
+            <Label id="_IDGenLabel5" text="Employee Skill"></Label>
+            <Input id="_IDGenInput6" ></Input>
+            <core:Title id="_IDGenTitle2" text="Contract Information"></core:Title>
+            <Label id="_IDGenLabel6" text="Employee Email"></Label>
+            <Input id="_IDGenInput7" ></Input>
+            <Label id="_IDGenLabel7" text="Employee Phone"></Label>
+            <Input id="_IDGenInput8" ></Input>
+        </f:content>
+        </f:SimpleForm>
+        <!-- GRID LAYOUT -->
+        <!-- <Panel id="panel1" headerText="Employee Detail" >
             <l:Grid id="_IDGenGrid" width="100%">
                 <l:content>
                     <Label
@@ -137,7 +159,7 @@
                     </Input>
                 </l:content>
             </l:Grid>
-        </Panel>
+        </Panel> -->
             
         </content>
         <footer>
