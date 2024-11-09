@@ -1,7 +1,58 @@
-<mvc:View controllerName="layouts.controller.View1"
-    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
-    xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
-        <content />
+<mvc:View
+    controllerName="layouts.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+    <Page
+        id="page1"
+        title="{i18n>title}"
+        class="mybackgroundcolor"
+    >
+        <content>
+            <FlexBox
+                id="flexBox1"
+                justifyContent="Center"
+                alignItems="Center"
+                height="100%"
+            >
+                <VBox id="_IDGenVBox">
+                    <!-- <Label id="_IDGenLabel" text="LOGIN" design="Bold"></Label> -->
+                    <Label
+                        id="_IDGenLabel1"
+                        text="Username"
+                        design="Bold"
+                        class="sapUiSmallMarginTop mytextcolor mytextfont"
+                    />
+                    <Input
+                        id="_IDGenInput"
+                        width="400px"
+                    />
+                    <Label
+                        id="_IDGenLabel2"
+                        text="Password"
+                        design="Bold"
+                        class="mytextcolor mytextfont"
+                    />
+                    <Input
+                        id="_IDGenInput1"
+                        width="400px"
+                        type="Password"
+                    />
+                    <Button
+                        id="_IDGenButton1"
+                        text="Login"
+                        width="400px"
+                        type="Emphasized"
+                    />
+                </VBox>
+            </FlexBox>
+                <Button
+                    id="_IDGenButton"
+                    text="Go to Second View"
+                    press="onPress"
+                    type="Emphasized"
+                />
+        </content>
     </Page>
 </mvc:View>
