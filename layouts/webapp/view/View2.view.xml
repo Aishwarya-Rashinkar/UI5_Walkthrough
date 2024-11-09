@@ -1,0 +1,156 @@
+<mvc:View
+    controllerName="layouts.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:f="sap.ui.layout.form"
+>
+    <Page
+        id="page2"
+        title="{i18n>title}"
+        class="mybackgroundcolor"
+    >
+        <content>
+        <Panel id="panel1" headerText="Employee Detail" >
+            <l:Grid id="_IDGenGrid" width="100%">
+                <l:content>
+                    <Label
+                        id="_IDGenLabel3"
+                        text="Employee Id"
+                        class="sapUiSmallMarginTop"
+                    >
+                        <layoutData>
+                            <l:GridData
+                                id="_IDGenGridData1"
+                                span="L3 M3"
+                            />
+                        </layoutData>
+                    </Label>
+                    <Input id="_IDGenInput3">
+                        <layoutData>
+                            <l:GridData
+                                id="_IDGenGridData5"
+                                span="L3 M3"
+                            />
+                        </layoutData>
+                    </Input>
+                    <Label
+                        id="_IDGenLabel4"
+                        text="Employee Name"
+                        class="sapUiSmallMarginTop"
+                    >
+                        <layoutData>
+                            <l:GridData
+                                id="_IDGenGridData"
+                                span="L3 M3"
+                            />
+                        </layoutData>
+                    </Label>
+                    <Input id="_IDGenInput4">
+                        <layoutData>
+                            <l:GridData
+                                id="_IDGenGridData6"
+                                span="L3 M3"
+                            />
+                        </layoutData>
+                    </Input>
+                    <Label
+                        id="_IDGenLabel5"
+                        text="Employee Designation"
+                        class="sapUiSmallMarginTop"
+                    >
+                        <layoutData>
+                            <l:GridData
+                                id="_IDGenGridData2"
+                                span="L3 M3"
+                            />
+                        </layoutData>
+                    </Label>
+                    <Input id="_IDGenInput8">
+                        <layoutData>
+                            <l:GridData
+                                id="_IDGenGridData7"
+                                span="L3 M3"
+                            />
+                        </layoutData>
+                    </Input>
+                                        <Label
+                        id="_IDGenLabel8"
+                        text="Employee Skill"
+                        class="sapUiSmallMarginTop"
+                    >
+                        <layoutData>
+                            <l:GridData
+                                id="_IDGenGridData10"
+                                span="L3 M3"
+                            />
+                        </layoutData>
+                    </Label>
+                    <Input id="_IDGenInput5">
+                        <layoutData>
+                            <l:GridData
+                                id="_IDGenGridData11"
+                                span="L3 M3"
+                            />
+                        </layoutData>
+                    </Input>
+                    <Label
+                        id="_IDGenLabel6"
+                        text="Employee Email"
+                        class="sapUiSmallMarginTop"
+                    >
+                        <layoutData>
+                            <l:GridData
+                                id="_IDGenGridData3"
+                                span="L3 M3"
+                            />
+                        </layoutData>
+                    </Label>
+                    <Input id="_IDGenInput6">
+                        <layoutData>
+                            <l:GridData
+                                id="_IDGenGridData8"
+                                span="L3 M3"
+                            />
+                        </layoutData>
+                    </Input>
+                    <Label
+                        id="_IDGenLabel7"
+                        text="Employee Phone Number"
+                        class="sapUiSmallMarginTop"
+                    >
+                        <layoutData>
+                            <l:GridData
+                                id="_IDGenGridData4"
+                                span="L3 M3"
+                            />
+                        </layoutData>
+                    </Label>
+                    <Input id="_IDGenInput7">
+                        <layoutData>
+                            <l:GridData
+                                id="_IDGenGridData9"
+                                span="L3 M3"
+                            />
+                        </layoutData>
+                    </Input>
+                </l:content>
+            </l:Grid>
+        </Panel>
+            
+        </content>
+        <footer>
+            <Bar id="_IDGenBar">
+                <contentRight>
+                    <Button
+                        id="_IDGenButton2"
+                        text="Submit"
+                        press="onSubmit"
+                        type="Emphasized"
+                    />
+                </contentRight>
+            </Bar>
+        </footer>
+    </Page>
+</mvc:View>

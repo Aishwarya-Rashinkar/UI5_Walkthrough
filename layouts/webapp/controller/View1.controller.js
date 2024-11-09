@@ -7,6 +7,11 @@ function (Controller) {
     return Controller.extend("layouts.controller.View1", {
         onInit: function () {
 
-        }
+        },
+        onPress: function() {
+            // alert("Hey");
+           this.getOwnerComponent().getRouter().navTo("RouteView2");
+           location.reload();
+        },
     });
 });
