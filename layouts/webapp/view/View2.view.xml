@@ -1,5 +1,5 @@
 <mvc:View
-    controllerName="layouts.controller.View1"
+    controllerName="layouts.controller.View2"
     xmlns:mvc="sap.ui.core.mvc"
     displayBlock="true"
     xmlns="sap.m"
@@ -10,12 +10,11 @@
     <Page
         id="page2"
         title="{i18n>title}"
-        class="mybackgroundcolor"
     >
         <content>
             <!-- OBJECT HEADER AND INCON TABBER -->
 
-            <ObjectHeader
+            <!-- <ObjectHeader
                 id="_IDGenObjectHeader"
                 title="Washing Machine"
                 number="30000"
@@ -106,26 +105,26 @@
                     >
                     </IconTabFilter>
                 </items>
-            </IconTabBar>
+            </IconTabBar> -->
             <!-- SIMPLE FORM  -->
-            <!-- <f:SimpleForm id="_IDGenSimpleForm" title="Employee Information" editable="true" layout="ResponsiveGridLayout" labelSpanL="3" labelSpanM="3" emptySpanL="0" emptySpanM="0">
+            <f:SimpleForm id="_IDGenSimpleForm" title="Employee Information" editable="true" layout="ResponsiveGridLayout" labelSpanL="3" labelSpanM="3" emptySpanL="0" emptySpanM="0">
         <f:content>
             <core:Title id="_IDGenTitle1" text="Basic Information"></core:Title>
-            <Label id="_IDGenLabel" text="Employee ID"></Label>
-            <Input id="_IDGenInput3" ></Input>
-            <Label id="_IDGenLabel3" text="Employee Name"></Label>
-            <Input id="_IDGenInput4" ></Input>
-            <Label id="_IDGenLabel4" text="Employee DEsignation"></Label>
-            <Input id="_IDGenInput5" ></Input>
-            <Label id="_IDGenLabel5" text="Employee Skill"></Label>
-            <Input id="_IDGenInput6" ></Input>
+            <Label id="_IDGenLabel" text="Employee ID" required="true"></Label>
+            <Input id="empIDIn" ></Input>
+            <Label id="_IDGenLabel3" text="Employee Name" required="true"></Label>
+            <Input id="empName" ></Input>
+            <Label id="_IDGenLabel4" text="Employee Designation" required="true"></Label>
+            <Input id="empDes" ></Input>
+            <Label id="_IDGenLabel5" text="Employee Skill" required="true"></Label>
+            <Input id="empSkill" ></Input>
             <core:Title id="_IDGenTitle2" text="Contract Information"></core:Title>
-            <Label id="_IDGenLabel6" text="Employee Email"></Label>
-            <Input id="_IDGenInput7" ></Input>
-            <Label id="_IDGenLabel7" text="Employee Phone"></Label>
-            <Input id="_IDGenInput8" ></Input>
+            <Label id="_IDGenLabel6" text="Employee Email" required="true"></Label>
+            <Input id="empEmail" ></Input>
+            <Label id="_IDGenLabel7" text="Employee Phone" required="true"></Label>
+            <Input id="empPhone" ></Input>
         </f:content>
-        </f:SimpleForm> -->
+        </f:SimpleForm>
             <!-- GRID LAYOUT -->
             <!-- <Panel id="panel1" headerText="Employee Detail" >
             <l:Grid id="_IDGenGrid" width="100%">
