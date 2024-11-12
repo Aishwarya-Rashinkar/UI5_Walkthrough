@@ -66,22 +66,22 @@
                                     id="_IDGenLabel11"
                                     text="Employee ID"
                                 />
-                                <Input id="_IDGenInput11" />
+                                <Text id="_IDGenText11" />
                                 <Label
                                     id="_IDGenLabel22"
                                     text="Employee Name"
                                 />
-                                <Input id="_IDGenInput22" />
+                                <Text id="_IDGenText22" />
                                 <Label
                                     id="_IDGenLabel33"
                                     text="Employee DEsignation"
                                 />
-                                <Input id="_IDGenInput33" />
+                                <Text id="_IDGenText33" />
                                 <Label
                                     id="_IDGenLabel44"
                                     text="Employee Skill"
                                 />
-                                <Input id="_IDGenInput44" />
+                                <Text id="_IDGenText44" />
                                 <core:Title
                                     id="_IDGenTitle2"
                                     text="Contract Information"
@@ -90,12 +90,12 @@
                                     id="_IDGenLabel55"
                                     text="Employee Email"
                                 />
-                                <Input id="_IDGenInput55" />
+                                <Text id="_IDGenText55" />
                                 <Label
                                     id="_IDGenLabel66"
                                     text="Employee Phone"
                                 />
-                                <Input id="_IDGenInput66" />
+                                <Text id="_IDGenText66" />
                             </f:content>
                         </f:SimpleForm>
                     </IconTabFilter>
@@ -107,22 +107,20 @@
                 </items>
             </IconTabBar> -->
             <!-- SIMPLE FORM  -->
-            <f:SimpleForm id="_IDGenSimpleForm" title="Employee Information" editable="true" layout="ResponsiveGridLayout" labelSpanL="3" labelSpanM="3" emptySpanL="0" emptySpanM="0">
+            <f:SimpleForm id="_IDGenSimpleForm1" title="Employee Information" editable="false" layout="ResponsiveGridLayout" labelSpanL="3" labelSpanM="3" emptySpanL="0" emptySpanM="0">
         <f:content>
-            <core:Title id="_IDGenTitle1" text="Basic Information"></core:Title>
-            <Label id="_IDGenLabel" text="Employee ID" required="true"></Label>
-            <Input id="empIDIn" ></Input>
-            <Label id="_IDGenLabel3" text="Employee Name" required="true"></Label>
-            <Input id="empName" ></Input>
-            <Label id="_IDGenLabel4" text="Employee Designation" required="true"></Label>
-            <Input id="empDes" ></Input>
-            <Label id="_IDGenLabel5" text="Employee Skill" required="true"></Label>
-            <Input id="empSkill" ></Input>
-            <core:Title id="_IDGenTitle2" text="Contract Information"></core:Title>
-            <Label id="_IDGenLabel6" text="Employee Email" required="true"></Label>
-            <Input id="empEmail" ></Input>
-            <Label id="_IDGenLabel7" text="Employee Phone" required="true"></Label>
-            <Input id="empPhone" ></Input>
+            <Label id="_IDGenLabel9"  text="Employee ID" required="true"></Label>
+            <Text id="empIDTxt" ></Text>
+            <Label id="_IDGenLabel10"  text="Employee Name" required="true"></Label>
+            <Text id="empNameTxt" ></Text>
+            <Label id="_IDGenLabel11"  text="Employee Designation" required="true"></Label>
+            <Text id="empDesTxt" ></Text>
+            <Label id="_IDGenLabel12"  text="Employee Skill" required="true"></Label>
+            <Text id="empSkillTxt" ></Text>
+            <Label id="_IDGenLabel13"  text="Employee Email" required="true"></Label>
+            <Text id="empEmailTxt" ></Text>
+            <Label id="_IDGenLabel14"  text="Employee Phone" required="true"></Label>
+            <Text id="empPhoneTxt" ></Text>
         </f:content>
         </f:SimpleForm>
             <!-- GRID LAYOUT -->
@@ -141,14 +139,14 @@
                             />
                         </layoutData>
                     </Label>
-                    <Input id="_IDGenInput3">
+                    <Text id="_IDGenText3">
                         <layoutData>
                             <l:GridData
                                 id="_IDGenGridData5"
                                 span="L3 M3"
                             />
                         </layoutData>
-                    </Input>
+                    </Text>
                     <Label
                         id="_IDGenLabel4"
                         text="Employee Name"
@@ -161,14 +159,14 @@
                             />
                         </layoutData>
                     </Label>
-                    <Input id="_IDGenInput4">
+                    <Text id="_IDGenText4">
                         <layoutData>
                             <l:GridData
                                 id="_IDGenGridData6"
                                 span="L3 M3"
                             />
                         </layoutData>
-                    </Input>
+                    </Text>
                     <Label
                         id="_IDGenLabel5"
                         text="Employee Designation"
@@ -181,14 +179,14 @@
                             />
                         </layoutData>
                     </Label>
-                    <Input id="_IDGenInput8">
+                    <Text id="_IDGenText8">
                         <layoutData>
                             <l:GridData
                                 id="_IDGenGridData7"
                                 span="L3 M3"
                             />
                         </layoutData>
-                    </Input>
+                    </Text>
                                         <Label
                         id="_IDGenLabel8"
                         text="Employee Skill"
@@ -201,14 +199,14 @@
                             />
                         </layoutData>
                     </Label>
-                    <Input id="_IDGenInput5">
+                    <Text id="_IDGenText5">
                         <layoutData>
                             <l:GridData
                                 id="_IDGenGridData11"
                                 span="L3 M3"
                             />
                         </layoutData>
-                    </Input>
+                    </Text>
                     <Label
                         id="_IDGenLabel6"
                         text="Employee Email"
@@ -221,14 +219,14 @@
                             />
                         </layoutData>
                     </Label>
-                    <Input id="_IDGenInput6">
+                    <Text id="_IDGenText6">
                         <layoutData>
                             <l:GridData
                                 id="_IDGenGridData8"
                                 span="L3 M3"
                             />
                         </layoutData>
-                    </Input>
+                    </Text>
                     <Label
                         id="_IDGenLabel7"
                         text="Employee Phone Number"
@@ -241,29 +239,18 @@
                             />
                         </layoutData>
                     </Label>
-                    <Input id="_IDGenInput7">
+                    <Text id="_IDGenText7">
                         <layoutData>
                             <l:GridData
                                 id="_IDGenGridData9"
                                 span="L3 M3"
                             />
                         </layoutData>
-                    </Input>
+                    </Text>
                 </l:content>
             </l:Grid>
         </Panel> -->
         </content>
-        <footer>
-            <Bar id="_IDGenBar">
-                <contentRight>
-                    <Button
-                        id="_IDGenButton2"
-                        text="Submit"
-                        press="onSubmit"
-                        type="Emphasized"
-                    />
-                </contentRight>
-            </Bar>
-        </footer>
+
     </Page>
 </mvc:View>
