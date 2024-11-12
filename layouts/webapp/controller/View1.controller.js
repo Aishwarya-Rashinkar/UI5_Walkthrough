@@ -9,19 +9,19 @@ function (Controller) {
 
         },
         onSubmit: function () {
-            let empId = this.getView().byId("empIDIn").getValue();
-            let empName = this.getView().byId("empName").getValue();
-            let empDesignation = this.getView().byId("empDes").getValue();
-            let empSkill = this.getView().byId("empSkill").getValue();
-            let empEmail = this.getView().byId("empEmail").getValue();
-            let empPhone = this.getView().byId("empPhone").getValue();
+            // let empId = this.getView().byId("empIDIn").getValue();
+            // let empName = this.getView().byId("empName").getValue();
+            // let empDesignation = this.getView().byId("empDes").getValue();
+            // let empSkill = this.getView().byId("empSkill").getValue();
+            // let empEmail = this.getView().byId("empEmail").getValue();
+            // let empPhone = this.getView().byId("empPhone").getValue();
 
-            this.getOwnerComponent().getModel().setProperty("/empId", empId);
-            this.getOwnerComponent().getModel().setProperty("/empName", empName);
-            this.getOwnerComponent().getModel().setProperty("/empDesig", empDesignation);
-            this.getOwnerComponent().getModel().setProperty("/empSkill", empSkill);
-            this.getOwnerComponent().getModel().setProperty("/empEmail", empEmail);
-            this.getOwnerComponent().getModel().setProperty("/empPhone", empPhone);
+            // this.getOwnerComponent().getModel().setProperty("/empId", empId);
+            // this.getOwnerComponent().getModel().setProperty("/empName", empName);
+            // this.getOwnerComponent().getModel().setProperty("/empDesig", empDesignation);
+            // this.getOwnerComponent().getModel().setProperty("/empSkill", empSkill);
+            // this.getOwnerComponent().getModel().setProperty("/empEmail", empEmail);
+            // this.getOwnerComponent().getModel().setProperty("/empPhone", empPhone);
 
             this.getOwnerComponent().getRouter().navTo("RouteView2");
             

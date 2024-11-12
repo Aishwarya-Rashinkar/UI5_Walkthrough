@@ -91,7 +91,7 @@
           "viewType": "XML",
           "transition": "slide",
           "clearControlAggregation": false,
-          "viewId": "Page2",
+          "viewId": "Page1",
           "viewName": "View1"
         },
         "TargetView2": {

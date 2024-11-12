@@ -110,17 +110,17 @@
             <f:SimpleForm id="_IDGenSimpleForm1" title="Employee Information" editable="false" layout="ResponsiveGridLayout" labelSpanL="3" labelSpanM="3" emptySpanL="0" emptySpanM="0">
         <f:content>
             <Label id="_IDGenLabel9"  text="Employee ID" required="true"></Label>
-            <Text id="empIDTxt" ></Text>
+            <Text id="empIDTxt"  text="{/empId}" ></Text>
             <Label id="_IDGenLabel10"  text="Employee Name" required="true"></Label>
-            <Text id="empNameTxt" ></Text>
+            <Text id="empNameTxt" text="{/empName}"></Text>
             <Label id="_IDGenLabel11"  text="Employee Designation" required="true"></Label>
-            <Text id="empDesTxt" ></Text>
+            <Text id="empDesTxt" text="{/empDesig}"></Text>
             <Label id="_IDGenLabel12"  text="Employee Skill" required="true"></Label>
-            <Text id="empSkillTxt" ></Text>
+            <Text id="empSkillTxt" text="{/empSkill}"></Text>
             <Label id="_IDGenLabel13"  text="Employee Email" required="true"></Label>
-            <Text id="empEmailTxt" ></Text>
+            <Text id="empEmailTxt" text="{/empEmail}"></Text>
             <Label id="_IDGenLabel14"  text="Employee Phone" required="true"></Label>
-            <Text id="empPhoneTxt" ></Text>
+            <Text id="empPhoneTxt" text="{/empPhone}"></Text>
         </f:content>
         </f:SimpleForm>
             <!-- GRID LAYOUT -->

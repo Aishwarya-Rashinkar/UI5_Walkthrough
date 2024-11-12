@@ -55,18 +55,18 @@
         <f:content>
             <core:Title id="_IDGenTitle1" text="Basic Information"></core:Title>
             <Label id="_IDGenLabel" text="Employee ID" required="true"></Label>
-            <Input id="empIDIn" ></Input>
+            <Input id="empIDIn" value="{/empId}" ></Input>
             <Label id="_IDGenLabel3" text="Employee Name" required="true"></Label>
-            <Input id="empName" ></Input>
+            <Input id="empName" value="{/empName}"></Input>
             <Label id="_IDGenLabel4" text="Employee Designation" required="true"></Label>
-            <Input id="empDes" ></Input>
+            <Input id="empDes" value="{/empDesig}"></Input>
             <Label id="_IDGenLabel5" text="Employee Skill" required="true"></Label>
-            <Input id="empSkill" ></Input>
+            <Input id="empSkill" value="{/empSkill}"></Input>
             <core:Title id="_IDGenTitle2" text="Contract Information"></core:Title>
             <Label id="_IDGenLabel6" text="Employee Email" required="true"></Label>
-            <Input id="empEmail" ></Input>
+            <Input id="empEmail" value="{/empEmail}"></Input>
             <Label id="_IDGenLabel7" text="Employee Phone" required="true"></Label>
-            <Input id="empPhone" ></Input>
+            <Input id="empPhone" value="{/empPhone}"></Input>
         </f:content>
         </f:SimpleForm>
                     <Button
