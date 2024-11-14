@@ -1,7 +1,51 @@
-<mvc:View controllerName="multivalue.controller.View1"
+<mvc:View xmlns:odata="sap.ui.comp.odata" xmlns:core="sap.ui.core" controllerName="multivalue.controller.View1"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
-    xmlns="sap.m">
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:f="sap.ui.layout.form"
+    >
     <Page id="page" title="{i18n>title}">
-        <content />
+        <content>
+
+        <List id="_IDGenList" items="{/aEmployees}" headerText="Employee Details" mode="SingleSelectMaster" selectionChange="onSelectOfList">
+            <ObjectListItem id="_IDGenObjectListItem1" title="{empName}" number="{empId}" numberUnit="{empDesig}">
+                <attributes>
+                    <ObjectAttribute id="_IDGenObjectAttribute1" title="Skill" text="{empSkill}"></ObjectAttribute>
+                    <ObjectAttribute id="_IDGenObjectAttribute2" title="Email" text="{empEmail}"></ObjectAttribute>
+                </attributes>
+                <firstStatus>
+                    <ObjectStatus id="_IDGenObjectStatus" text="{empLoc}"></ObjectStatus>
+                </firstStatus>
+            </ObjectListItem>
+        </List>
+
+        <!-- <f:SimpleForm id="_IDGenSimpleForm" title="Employee Information" editable="true" layout="ResponsiveGridLayout" labelSpanL="3" labelSpanM="3" emptySpanL="4" emptySpanM="0">
+        <f:content>
+        <Label id="_IDGenLabel1" text="Select Relationship"></Label>
+        <Select id="_IDGenSelect" items="{/aRelations}" change="onSelection">
+            <core:Item id="_IDGenItem1" text="{relation}"></core:Item>
+        </Select>
+
+        <Label id="_IDGenLabel2" text="Select Relationship"></Label>
+        <ComboBox id="_IDGenCombo" items="{/aRelations}" change="onSelection">
+            <core:Item id="_IDGenItem2" text="{relation}"></core:Item>
+        </ComboBox>
+
+        <Label id="_IDGenLabel3" text="Select Your Language"></Label>
+        <MultiComboBox id="_IDGenMultiCombo" items="{/aLanguages}" change="onSelectionMultiValue">
+            <core:Item id="_IDGenItem3" text="{Language}"></core:Item>
+        </MultiComboBox>
+
+        <Label id="_IDGenLabel4" text="Select Your Gender"></Label>
+        <RadioButtonGroup id="_IDGenRadio" buttons="{/aGender}" columns="2" select="onSelectionRadioButton">
+            <RadioButton id="_IDGenRadioButton" text="{gender}"></RadioButton>
+        </RadioButtonGroup>
+
+        <Label id="_IDGenLabel5" text="are you married"></Label>
+        <CheckBox id="_IDGenCheckBox" select="onSelection"></CheckBox>
+            </f:content>
+        </f:SimpleForm> -->
+        </content>
+
     </Page>
 </mvc:View>

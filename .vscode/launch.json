@@ -55,57 +55,57 @@
       }
     },
     {
-        "name": "Start multivalue",
-        "type": "node",
-        "request": "launch",
-        "cwd": "${workspaceFolder}/multivalue",
-        "runtimeExecutable": "npx",
-        "windows": {
-            "runtimeExecutable": "npx.cmd"
-        },
-        "runtimeArgs": [
-            "fiori",
-            "run"
-        ],
-        "args": [
-            "--open",
-            "test/flpSandbox.html#multivalue-display"
-        ],
-        "console": "internalConsole",
-        "internalConsoleOptions": "openOnSessionStart",
-        "outputCapture": "std",
-        "env": {
-            "DEBUG": "--inspect",
-            "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
-            "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/UI5_Walkthrough/multivalue\"}"
-        }
+      "name": "Start multivalue",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/multivalue",
+      "runtimeExecutable": "npx",
+      "windows": {
+        "runtimeExecutable": "npx.cmd"
+      },
+      "runtimeArgs": [
+        "fiori",
+        "run"
+      ],
+      "args": [
+        "--open",
+        "test/flpSandbox.html#multivalue-display"
+      ],
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "outputCapture": "std",
+      "env": {
+        "DEBUG": "--inspect",
+        "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/UI5_Walkthrough/multivalue\"}"
+      }
     },
     {
-        "name": "Start multivalue Local",
-        "type": "node",
-        "request": "launch",
-        "cwd": "${workspaceFolder}/multivalue",
-        "runtimeExecutable": "npx",
-        "windows": {
-            "runtimeExecutable": "npx.cmd"
-        },
-        "runtimeArgs": [
-            "fiori",
-            "run"
-        ],
-        "args": [
-            "--config",
-            "./ui5-local.yaml",
-            "--open",
-            "test/flpSandbox.html#multivalue-display"
-        ],
-        "console": "internalConsole",
-        "internalConsoleOptions": "openOnSessionStart",
-        "outputCapture": "std",
-        "env": {
-            "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
-            "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/UI5_Walkthrough/multivalue\"}"
-        }
+      "name": "Start multivalue Local",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/multivalue",
+      "runtimeExecutable": "npx",
+      "windows": {
+        "runtimeExecutable": "npx.cmd"
+      },
+      "runtimeArgs": [
+        "fiori",
+        "run"
+      ],
+      "args": [
+        "--config",
+        "./ui5-local.yaml",
+        "--open",
+        "test/flpSandbox.html#multivalue-display"
+      ],
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "outputCapture": "std",
+      "env": {
+        "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/UI5_Walkthrough/multivalue\"}"
+      }
     }
   ]
 }

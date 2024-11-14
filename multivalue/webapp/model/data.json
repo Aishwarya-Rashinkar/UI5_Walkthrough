@@ -1,0 +1,82 @@
+{
+    "aRelations": [
+        {
+            "relation": "Mother"
+        },
+        {
+            "relation": "Father"
+        },
+        {
+            "relation": "Brother"
+        },
+        {
+            "relation": "Sister"
+        },
+        {
+            "relation": "Husband"
+        }
+    ],
+    "aLanguages": [
+        {
+            "Language": "Kannada"
+        },
+        {
+            "Language": "Marathi"
+        },
+        {
+            "Language": "English"
+        },
+        {
+            "Language": "Telagu"
+        },
+        {
+            "Language": "Tamil"
+        }
+    ],
+    "aGender": [
+        {
+            "gender": "Male"
+        },
+        {
+            "gender": "Female"
+        }
+    ],
+    "aEmployees": [
+        {
+            "empId": "12345",
+            "empName": "Aishwarya",
+            "empDesig": "Associate Software Engineer",
+            "empSkill": "CAPM, SAPUI5",
+            "empEmail": "a@gmail.com",
+            "empPhone": "9876543526",
+            "empLoc":"Hubli"
+        },
+        {
+            "empId": "123798",
+            "empName": "Chethan",
+            "empDesig": "Software Engineer",
+            "empSkill": "AI/ML, Python",
+            "empEmail": "c@gmail.com",
+            "empPhone": "8722366754",
+            "empLoc":"Sira"
+        },
+        {
+            "empId": "987653",
+            "empName": "Shivu",
+            "empDesig": "Electrical Engineer",
+            "empSkill": "KiCad",
+            "empEmail": "s@gmail.com",
+            "empPhone": "9876543224",
+            "empLoc":"dharwad"
+        },
+        {
+            "empId": "8765425",
+            "empName": "Tulsi",
+            "empDesig": "ABAP Dev",
+            "empSkill": "ABAP",
+            "empEmail": "t@gmail.com",
+            "empPhone": "9876545367",
+            "empLoc":"pune"
+        }
+    ]
+}

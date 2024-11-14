@@ -77,6 +77,13 @@
           "target": [
             "TargetView1"
           ]
+        },
+        {
+          "name": "RouteView2",
+          "pattern": ":?query:",
+          "target": [
+            "TargetView2"
+          ]
         }
       ],
       "targets": {
@@ -86,6 +93,13 @@
           "clearControlAggregation": false,
           "viewId": "View1",
           "viewName": "View1"
+        },
+        "TargetView2": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "View2",
+          "viewName": "View2"
         }
       }
     },
