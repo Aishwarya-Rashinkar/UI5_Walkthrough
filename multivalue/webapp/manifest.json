@@ -73,14 +73,14 @@
       "routes": [
         {
           "name": "RouteView1",
-          "pattern": ":?query:",
+          "pattern": "",
           "target": [
             "TargetView1"
           ]
         },
         {
           "name": "RouteView2",
-          "pattern": ":?query:",
+          "pattern": "secondview/{Index}",
           "target": [
             "TargetView2"
           ]

@@ -1,0 +1,131 @@
+<mvc:View
+    xmlns:odata="sap.ui.comp.odata"
+    xmlns:core="sap.ui.core"
+    controllerName="multivalue.controller.View2"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:f="sap.ui.layout.form"
+>
+    <Page
+        id="page2"
+        title="{i18n>title}"
+    >
+        <content>
+
+            <ObjectHeader
+                id="_IDGenObjectHeader"
+                title="{empName}"
+                number="{empId}"
+                numberUnit="{empDesig}"
+                backgroundDesign="Solid"
+            >
+                <attributes>
+                    <ObjectAttribute
+                        id="_IDGenObjectAttribute11"
+                        title="Employee Phone No:"
+                        text="{empPhone}"
+                    />
+                    <ObjectAttribute
+                        id="_IDGenObjectAttribute22"
+                        title="Employee Designation"
+                        text="{empEmail}"
+                    />
+                </attributes>
+                <statuses>
+                    <ObjectStatus
+                        id="_IDGenObjectStatus1"
+                        text="{empLoc}"
+                    />
+                </statuses>
+            </ObjectHeader>
+
+            <IconTabBar id="_IDGenIconTabBar">
+                <items>
+                    <IconTabFilter
+                        id="_IDGenIconTabFilter1"
+                        icon="sap-icon://hint"
+                    >
+                        <f:SimpleForm
+                            id="_IDGenSimpleForm1"
+                            title="Employee Information"
+                            editable="false"
+                            layout="ResponsiveGridLayout"
+                            labelSpanL="3"
+                            labelSpanM="3"
+                            emptySpanL="0"
+                            emptySpanM="0"
+                        >
+                            <f:content>
+                                <Label
+                                    id="_IDGenLabel9"
+                                    text="Employee ID"
+                                    required="true"
+                                />
+                                <Text
+                                    id="empIDTxt"
+                                    text="{empId}"
+                                />
+                                <Label
+                                    id="_IDGenLabel10"
+                                    text="Employee Name"
+                                    required="true"
+                                />
+                                <Text
+                                    id="empNameTxt"
+                                    text="{empName}"
+                                />
+                                <Label
+                                    id="_IDGenLabel11"
+                                    text="Employee Designation"
+                                    required="true"
+                                />
+                                <Text
+                                    id="empDesTxt"
+                                    text="{empDesig}"
+                                />
+                                <Label
+                                    id="_IDGenLabel12"
+                                    text="Employee Skill"
+                                    required="true"
+                                />
+                                <Text
+                                    id="empSkillTxt"
+                                    text="{empSkill}"
+                                />
+                                <Label
+                                    id="_IDGenLabel13"
+                                    text="Employee Email"
+                                    required="true"
+                                />
+                                <Text
+                                    id="empEmailTxt"
+                                    text="{empEmail}"
+                                />
+                                <Label
+                                    id="_IDGenLabel14"
+                                    text="Employee Phone"
+                                    required="true"
+                                />
+                                <Text
+                                    id="empPhoneTxt"
+                                    text="{empPhone}"
+                                />
+                                <Label
+                                    id="_IDGenLabel15"
+                                    text="Employee Location"
+                                    required="true"
+                                />
+                                <Text
+                                    id="empLocTxt"
+                                    text="{empLoc}"
+                                />
+                            </f:content>
+                        </f:SimpleForm>
+                    </IconTabFilter>
+                </items>
+            </IconTabBar>
+        </content>
+    </Page>
+</mvc:View>

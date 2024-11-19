@@ -34,7 +34,14 @@ function (Controller) {
         onSelectOfList: function (oEvent) {
             oEvent;
             var empD = oEvent.getParameter("listItem").getBindingContext().getProperty("empId");
-            console.log(empD);
+            // console.log(empD);
+            let sPath = oEvent.getParameter("listItem").getBindingContext().getPath();
+            var index = sPath.split("/")[2];
+            console.log(index);
+            
+            this.getOwnerComponent().getRouter().navTo("RouteView2", {
+                Index:index
+            });
         }
     });
 });
