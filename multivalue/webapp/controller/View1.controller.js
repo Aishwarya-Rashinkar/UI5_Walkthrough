@@ -1,7 +1,10 @@
 sap.ui.define([
-    "sap/ui/core/mvc/Controller"
+    "sap/ui/core/mvc/Controller",
+    "sap/ui/model/Filter",
+    "sap/ui/model/FilterOperator",
+    "sap/ui/model/Sorter"
 ],
-function (Controller) {
+function (Controller,Filter,FilterOperator,Sorter) {
     "use strict";
 
     return Controller.extend("multivalue.controller.View1", {
@@ -42,6 +45,26 @@ function (Controller) {
             this.getOwnerComponent().getRouter().navTo("RouteView2", {
                 Index:index
             });
+        },
+
+        onSearchEmp: function (oEvent) {
+            var value = oEvent.getParameter("newValue");
+            var aFilter = [];
+            if (value !== "") {
+                var oFilter = new Filter("empName",FilterOperator.Contains,value);
+                aFilter.push(oFilter);
+            }
+            this.getView().byId("_IDGenList").getBinding("items").filter(aFilter);
+        },
+
+        sortAsc: function (oEvent) {
+            var oSorter = new Sorter("empName",false);
+            this.getView().byId("_IDGenList").getBinding("items").sort(oSorter);
+
+        },
+        sortDesc: function (oEvent) {
+            var oSorter = new Sorter("empName",true);
+            this.getView().byId("_IDGenList").getBinding("items").sort(oSorter);
         }
     });
 });
