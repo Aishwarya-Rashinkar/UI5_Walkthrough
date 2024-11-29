@@ -65,6 +65,21 @@ function (Controller,Filter,FilterOperator,Sorter) {
         sortDesc: function (oEvent) {
             var oSorter = new Sorter("empName",true);
             this.getView().byId("_IDGenList").getBinding("items").sort(oSorter);
+        },
+        onPressofF4: function (oEvent) {
+            if(!this._dialog){
+                this._dialog = sap.ui.xmlfragment(this.getView().getId(), "multivalue.view.fragment.F4HelpFragment", this);
+                this.getView().addDependent(this._dialog);
+            }
+            this._dialog.open();
+        },
+        onClose: function (){
+            this._dialog.close();
+        },
+        onSelectEmpFromF4: function (oEvent) {
+            var empId = oEvent.getParameter("listItem").getBindingContext().getProperty("empId");
+            this.getView().byId("_IDGenInput").setValue(empId);
+            this._dialog.close();
         }
     });
 });

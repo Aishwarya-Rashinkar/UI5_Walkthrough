@@ -7,7 +7,14 @@
     <Page id="page1" title="{i18n>title}">
         <content>
 
-        <Table id="_IDGenList" items="{/aEmployees}" headerText="Employee Details" mode="SingleSelectMaster" selectionChange="onSelectOfList">
+        <f:SimpleForm id="_IDGenSimpleForm" title="Employee Information" editable="true" layout="ResponsiveGridLayout" labelSpanL="3" labelSpanM="3" emptySpanL="4" emptySpanM="0">
+        <f:content>
+        <Label id="_IDGenLabel1" text="Select Employee ID"></Label>
+        <Input id="_IDGenInput" showValueHelp="true" valueHelpRequest="onPressofF4"></Input>
+        </f:content>
+        </f:SimpleForm>
+        
+        <!-- <Table id="_IDGenList" items="{/aEmployees}" headerText="Employee Details" mode="SingleSelectMaster" selectionChange="onSelectOfList">
         <headerToolbar>
                 <Toolbar id="_IDGenToolbar" >
                     <Text id="_IDGenText" text="Employee Details" class="sapMM3FontSize"></Text>
@@ -53,7 +60,7 @@
                 </cells>
             </ColumnListItem>
             </items>
-        </Table>
+        </Table> -->
 
         <!-- <List id="_IDGenList" items="{/aEmployees}" headerText="Employee Details" mode="SingleSelectMaster" selectionChange="onSelectOfList">
             <headerToolbar>
