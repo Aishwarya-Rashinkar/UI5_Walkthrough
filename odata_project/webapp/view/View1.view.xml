@@ -1,0 +1,78 @@
+<mvc:View xmlns:table="sap.ui.table" xmlns:odata="sap.ui.comp.odata" xmlns:core="sap.ui.core" controllerName="odataproject.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:f="sap.ui.layout.form"
+    >
+    <Page id="page1" title="{i18n>title}">
+        <content>
+
+    <Table id="_IDGenList" items="{/Products}" headerText="Product Details" mode="SingleSelectMaster" selectionChange="onSelectOfList">
+        <headerToolbar>
+                <Toolbar id="_IDGenToolbar" >
+                    <Text id="_IDGenText" text="Product Details" class="sapMM3FontSize"></Text>
+                    <ToolbarSpacer id="_IDGenToolbarSpacer" ></ToolbarSpacer>
+                    <SearchField id="_IDGenSearchField1" width="30%" liveChange="onSearchPrd"></SearchField>
+                    <Button id="_IDGenButton1" icon="sap-icon://sort-ascending" press="sortAsc"></Button>
+                    <Button id="_IDGenButton2" icon="sap-icon://sort-descending" press="sortDesc"></Button>
+                </Toolbar>
+            </headerToolbar>
+            <columns>
+                <Column id="_IDGenColumn">
+                    <Text id="_IDGenText2" text="Product ID"></Text>
+                </Column>
+                <Column id="_IDGenColumn1" >
+                    <Text id="_IDGenText3" text="Product Name"></Text>
+                </Column>
+                <Column id="_IDGenColumn2" >
+                    <Text id="_IDGenText4" text="Supplier ID"></Text>
+                </Column>
+                <Column id="_IDGenColumn3" >
+                    <Text id="_IDGenText5" text="Quantity Per Unit"></Text>
+                </Column>
+                <Column id="_IDGenColumn4" >
+                    <Text id="_IDGenText6" text="Unit Price"></Text>
+                </Column>
+                <Column id="_IDGenColumn5" >
+                    <Text id="_IDGenText7" text="Units In Stock"></Text>
+                </Column>
+                <Column id="_IDGenColumn6" >
+                    <Text id="_IDGenText8" text="Units On Order"></Text>
+                </Column>
+            </columns>
+            <items>
+            <ColumnListItem id="_IDGenColumnListItem" >
+                <cells>
+                    <Text id="_IDGenText9" text="{ProductID}"></Text>
+                    <Text id="_IDGenText10" text="{ProductName}"></Text>
+                    <Text id="_IDGenText11" text="{SupplierID}"></Text>
+                    <Text id="_IDGenText12" text="{QuantityPerUnit}"></Text>
+                    <Text id="_IDGenText13" text="{UnitPrice}"></Text>
+                    <Text id="_IDGenText14" text="{UnitsInStock}"></Text>
+                    <Text id="_IDGenText15" text="{UnitsOnOrder}"></Text>
+                </cells>
+            </ColumnListItem>
+            </items>
+        </Table>
+
+        <!-- <f:SimpleForm id="_IDGenSimpleForm" title="Product Information" editable="true" layout="ResponsiveGridLayout" labelSpanL="3" labelSpanM="3" emptySpanL="4" emptySpanM="0">
+        <f:content>
+        <Label id="_IDGenLabel1" text="SELECT PRODUCT ID"></Label>
+        <Select id="_IDGenSelect" items="{/Products}" change="onSelection">
+            <core:Item id="_IDGenItem1" text="{ProductID}"></core:Item>
+        </Select>
+
+        <Label id="_IDGenLabel2" text="SELECT PRODUCT NAME"></Label>
+        <ComboBox id="_IDGenCombo" items="{/Products}" change="onComboSelection">
+            <core:Item id="_IDGenItem2" text="{ProductName}"></core:Item>
+        </ComboBox>
+
+        <Label id="_IDGenLabel3" text="SELECT CATEGORY ID"></Label>
+        <MultiComboBox id="_IDGenMultiCombo" items="{/Products}" change="onComboSelection">
+            <core:Item id="_IDGenItem3" text="{CategoryID}"></core:Item>
+        </MultiComboBox>
+            </f:content>
+        </f:SimpleForm> -->
+        </content>
+    </Page>
+</mvc:View>

@@ -1,0 +1,86 @@
+<mvc:View
+    xmlns:table="sap.ui.table"
+    xmlns:odata="sap.ui.comp.odata"
+    xmlns:core="sap.ui.core"
+    controllerName="odataproject.controller.View2"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:f="sap.ui.layout.form"
+>
+    <Page
+        id="page2"
+        title="{i18n>title}"
+    >
+        <content>
+            <ObjectHeader
+                id="_IDGenObjectHeader"
+                title="{ProductName}"
+                number="{ProductID}"
+                numberUnit="{UnitPrice}"
+                backgroundDesign="Solid"
+            >
+                <attributes>
+                    <ObjectAttribute
+                        id="_IDGenObjectAttribute11"
+                        title="Quantity Per Unit:"
+                        text="{QuantityPerUnit}"
+                    />
+                    <ObjectAttribute
+                        id="_IDGenObjectAttribute22"
+                        title="Units in Stock"
+                        text="{UnitsInStock}"
+                    />
+                </attributes>
+                <statuses>
+                    <ObjectStatus
+                        id="_IDGenObjectStatus1"
+                        text="{SupplierID}"
+                    />
+                </statuses>
+            </ObjectHeader>
+
+            <IconTabBar id="_IDGenIconTabBar">
+                <items>
+                    <IconTabFilter
+                        id="_IDGenIconTabFilter1"
+                        icon="sap-icon://hint"
+                    >
+                        <f:SimpleForm
+                            id="_IDGenSimpleForm1"
+                            title="Product Information"
+                            editable="false"
+                            layout="ResponsiveGridLayout"
+                            labelSpanL="3"
+                            labelSpanM="3"
+                            emptySpanL="0"
+                            emptySpanM="0"
+                        >
+                            <f:content>
+                                <Label
+                                    id="_IDGenLabel9"
+                                    text="Product ID"
+                                    required="true"
+                                />
+                                <Text
+                                    id="empIDTxt"
+                                    text="{ProductID}"
+                                />
+                                <Label
+                                    id="_IDGenLabel10"
+                                    text="Product Name"
+                                    required="true"
+                                />
+                                <Text
+                                    id="empNameTxt"
+                                    text="{ProductName}"
+                                />
+                            </f:content>
+                        </f:SimpleForm>
+                    </IconTabFilter>
+                </items>
+            </IconTabBar>
+        </content>
+    </Page>
+</mvc:View>
