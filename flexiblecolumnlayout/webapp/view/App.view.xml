@@ -1,7 +1,6 @@
-<mvc:View controllerName="flexiblecolumnlayout.controller.App"
-    displayBlock="true"
-    xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m">
-    <App id="app">
-    </App>
+<mvc:View controllerName="com.flex.FlexLayoutwithObjpage.controller.App" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:html="http://www.w3.org/1999/xhtml" displayBlock="true" xmlns:m="sap.m" xmlns="sap.f">
+	<m:App id="idAppControl">
+		<FlexibleColumnLayout id="flexibleColumnLayout" stateChange=".onStateChanged" backgroundDesign="Solid" layout="{/layout}"/>
+	</m:App>
 </mvc:View>
